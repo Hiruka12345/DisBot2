@@ -39,8 +39,8 @@ app.listen(port, () => {
 
 client.login({
  name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼',
- type: AcivityType.Streaming,
- url: 'https://youtu.be/OqxHy8sCtvA?si=W0DLXMX6_UH_3Jmi',
+ type: ActivityType.Streaming,
+ url: 'https://www.youtube.com/live/DGhTc_0_IF4?si=KouhGwXQjNwUYYcm',
 });
 
 
