@@ -49,10 +49,16 @@ let status = [
  type: ActivityType.Watching,
 }
 ]
-setInterval(() => {
+
+client.on('ready', (c) => {
+ console.log('${c.user.tag}'is online.');
+  setInterval(() => {
  let random = Math.floor(Math.random() * status.length);
  client.user.setActivity(status[random]);
 }, 10000);
+
+})
+
 
 
 let currentIndex = 0;
