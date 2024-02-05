@@ -37,7 +37,7 @@ app.listen(port, () => {
 
 
 
-client.login({
+client.user.setActivity({
  name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼',
  type: ActivityType.Streaming,
  url: 'https://www.youtube.com/live/DGhTc_0_IF4?si=KouhGwXQjNwUYYcm',
