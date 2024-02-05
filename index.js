@@ -37,21 +37,20 @@ app.listen(port, () => {
 
 let status = [
  {
- name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼',
+ name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of 𝓓𝓮𝓶𝓸𝓝 𝓼𝓼',
  type: ActivityType.Streaming,
- url: 'https://www.youtube.com/live/DGhTc_0_IF4?si=KouhGwXQjNwUYYcm',
+ url: 'https://www.youtube.com/live/DGhTc_0_IF4?si=b7kKlaBAn-yNdmSv',
 },
  {
- name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼1',
+ name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of 𝓓𝓮𝓶𝓸𝓝 𝓼𝓼1',
 },
 {
- name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼2',
+ name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of 𝓓𝓮𝓶𝓸𝓝 𝓼𝓼2',
  type: ActivityType.Watching,
 }
 ]
 
 client.on('ready', (c) => {
- console.log('${c.user.tag}'is online.');
   setInterval(() => {
  let random = Math.floor(Math.random() * status.length);
  client.user.setActivity(status[random]);
