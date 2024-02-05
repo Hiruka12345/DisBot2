@@ -36,7 +36,12 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["Watching 𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼"];
+
+client.login({
+ name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼',
+ type: AcivityType.Streaming,
+ url: 'https://youtu.be/OqxHy8sCtvA?si=W0DLXMX6_UH_3Jmi',
+});
 
 
 let currentIndex = 0;
