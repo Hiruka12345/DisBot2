@@ -36,27 +36,32 @@ app.listen(port, () => {
 });
 
 let status = [
- {
- name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of 𝓓𝓮𝓶𝓸𝓝 𝓼𝓼',
- type: ActivityType.Streaming,
- url: 'https://www.youtube.com/live/DGhTc_0_IF4?si=b7kKlaBAn-yNdmSv',
-},
- {
- name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of 𝓓𝓮𝓶𝓸𝓝 𝓼𝓼1',
-},
-{
- name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of 𝓓𝓮𝓶𝓸𝓝 𝓼𝓼2',
- type: ActivityType.Watching,
-}
-]
+  {
+    name: 'Under Ctrl',
+    type: ActivityType.Streaming,
+    url: 'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+  },
+  {
+    name: 'Custom Status 1',
+  },
+  {
+    name: 'Custom Status 2',
+    type: ActivityType.Watching,
+  },
+  {
+    name: 'Custom Status 3',
+    type: ActivityType.Listening,
+  },
+];
 
 client.on('ready', (c) => {
-  setInterval(() => {
- let random = Math.floor(Math.random() * status.length);
- client.user.setActivity(status[random]);
-}, 10000);
+  console.log(`✅ ${c.user.tag} is online.`);
 
-})
+  setInterval(() => {
+    let random = Math.floor(Math.random() * status.length);
+    client.user.setActivity(status[random]);
+  }, 10000);
+});
 
 
 
