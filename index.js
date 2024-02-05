@@ -35,13 +35,24 @@ app.listen(port, () => {
   console.log(`🔗 Powered By RTX`);
 });
 
-
-
-client.user.setActivity({
+let status = [
+ {
  name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼',
  type: ActivityType.Streaming,
  url: 'https://www.youtube.com/live/DGhTc_0_IF4?si=KouhGwXQjNwUYYcm',
-});
+},
+ {
+ name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼1',
+},
+{
+ name: '𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼2',
+ type: ActivityType.Watching,
+}
+]
+setInterval(() => {
+ let random = Math.floor(Math.random() * status.length);
+ client.user.setActivity(status[random]);
+}, 10000);
 
 
 let currentIndex = 0;
