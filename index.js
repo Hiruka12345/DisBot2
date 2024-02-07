@@ -36,7 +36,7 @@ app.listen(port, () => {
 });
 
 
-const statusMessages = ["watching 𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼 Discord Server",URL :- Dis server link - https://discord.gg/SwFrpspS73];
+const statusMessages = ["watching 𝓕𝙚𝙙𝙚𝙧𝙖𝙩𝙞𝙤𝙉 Of' 𝓓𝓮𝓶𝓸𝓝'𝓼𝓼 Discord Server",URL :- https://discord.gg/SwFrpspS73];
 
 let currentIndex = 0;
 const channelId = '';
